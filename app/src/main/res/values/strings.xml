@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">The Guardian</string>
+    <string name="error_try_again_later">An error occurred. Please try again later</string>
+    <string name="lost_internet">No internet connexion. Please try again later</string>
+    <string name="loading_in_progress">Loading in progress</string>
+    <string name="error_no_article_available">No articles available for now</string>
+    <string name="refresh">Refresh</string>
+    <string name="favorite_remove_msg">Removed from your favorite</string>
+    <string name="favorite_add_msg">Added to your favorite</string>
+    <string name="favorite_content_description">add to favorite icon</string>
+    <string name="article_list_section_favourites">Favourites</string>
+    <string name="article_list_section_this_week">This week</string>
+    <string name="article_list_section_previous_week">Previous week</string>
+    <string name="article_list_section_articles">Articles</string>
+
+</resources>

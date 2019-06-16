@@ -1,0 +1,37 @@
+apply plugin: 'com.android.application'
+apply from: '../config/config-android.gradle'
+apply from: '../config/config-properties.gradle'
+
+android {
+
+    defaultConfig {
+        applicationId "com.monzo.androidtest"
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "com.monzo.androidtest.ui.EspressoTestRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField "String", "API_BASE_URL", "\"${config.variablesProperties.api_base_url_prod}\""
+        }
+        debug {
+            minifyEnabled false
+            shrinkResources false
+            buildConfigField "String", "API_BASE_URL", "\"${config.variablesProperties.api_base_url_debug}\""
+        }
+    }
+}
+
+dependencies {
+    kotlin()
+    dagger()
+    networking()
+    rx()
+    architectureComponents()
+    view()
+    testing()
+}

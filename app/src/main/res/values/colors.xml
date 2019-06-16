@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0A5787</color>
+    <color name="colorPrimaryDark">#084A72</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="background">#EFEFEF</color>
+    <color name="shadow_dark_end">#00000000</color>
+    <color name="shadow_dark_start">#28000000</color>
+    <color name="shadow_while_end">#ffffff</color>
+    <color name="shadow_while_start">#23FFFFFF</color>
+
+    <color name="heart_primary_color">#da4439</color>
+    <color name="heart_secondary_color">#8a098c</color>
+</resources>

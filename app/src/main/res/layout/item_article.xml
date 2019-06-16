@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_article_height"
+        style="@style/RippleEffect"
+        android:background="@android:color/white"
+        android:paddingLeft="@dimen/item_padding"
+        android:paddingRight="@dimen/item_padding"
+        android:paddingTop="@dimen/item_padding">
+
+    <com.monzo.androidtest.ui.customview.GlideImageView
+            android:id="@+id/ivArticleThumbnail"
+            android:layout_width="@dimen/item_thumbnail_size"
+            android:layout_centerVertical="true"
+            android:layout_height="@dimen/item_thumbnail_size"
+            tools:src="@mipmap/ic_launcher"/>
+
+    <TextView
+            android:id="@+id/tvArticleHeadline"
+            style="@style/TextTitle"
+            android:layout_marginStart="@dimen/item_margin_hor"
+            android:layout_toEndOf="@+id/ivArticleThumbnail"
+            tools:text="dummy title"/>
+
+    <TextView
+            android:id="@+id/tvDate"
+            style="@style/TextBody"
+            android:layout_below="@+id/tvArticleHeadline"
+            android:layout_marginStart="@dimen/item_margin_hor"
+            android:layout_marginTop="@dimen/item_margin_top"
+            android:ellipsize="end"
+            android:layout_toEndOf="@+id/ivArticleThumbnail"
+            tools:text="dummy body"/>
+</RelativeLayout>

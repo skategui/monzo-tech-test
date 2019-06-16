@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="list_articles_state_title_content_description">loading indication</string>
+    <string name="list_articles_reload_button_content_description">reload button</string>
+    <string name="list_articles_listview_content_description">list of articles</string>
+
+    <string name="article_detail_header_content_description">article cover</string>
+    <string name="article_detail_add_favorite_content_description">add to favorite</string>
+    <string name="article_detail_article_title_content_description">article title</string>
+    <string name="article_detail_article_body_content_description">article body</string>
+</resources>

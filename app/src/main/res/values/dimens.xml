@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="title_textsize">16sp</dimen>
+    <dimen name="btn_height">40dp</dimen>
+    <dimen name="btn_textsize">16sp</dimen>
+    <dimen name="btn_radius">10dp</dimen>
+    <dimen name="elevation">4dp</dimen>
+
+
+    <!-- List articles activity -->
+    <dimen name="list_article_animation_size">150dp</dimen>
+    <dimen name="list_article_shadow_height">60dp</dimen>
+    <dimen name="list_article_animation_margin_top">50dp</dimen>
+    <dimen name="list_article_width_width">200dp</dimen>
+    <dimen name="list_article_recyclerview_padding_bottom">40dp</dimen>
+
+    <!-- item in list -->
+    <dimen name="item_thumbnail_size">45dp</dimen>
+    <dimen name="item_padding">16dp</dimen>
+    <dimen name="item_padding_top">32dp</dimen>
+    <dimen name="item_body_textsize">12sp</dimen>
+    <dimen name="item_margin_hor">12dp</dimen>
+    <dimen name="item_article_height">80dp</dimen>
+    <dimen name="item_margin_top">5dp</dimen>
+
+
+    <!-- Article detail activity -->
+    <dimen name="article_detail_title_textsize">24sp</dimen>
+    <dimen name="article_detail_body_textsize">14sp</dimen>
+    <dimen name="article_detail_body_margin_top">20dp</dimen>
+    <dimen name="article_detail_content_padding">15dp</dimen>
+    <dimen name="article_detail_header_height">200dp</dimen>
+
+    <!-- favourites -->
+    <dimen name="favorite_size">50dp</dimen>
+    <dimen name="favorite_margin_hor">10dp</dimen>
+    <dimen name="favorite_icon_size">40dp</dimen>
+
+
+</resources>

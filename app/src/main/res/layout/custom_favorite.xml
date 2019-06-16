@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <com.varunest.sparkbutton.SparkButton
+            android:id="@+id/spark_button"
+            android:layout_width="@dimen/favorite_icon_size"
+            android:contentDescription="@string/favorite_content_description"
+            android:layout_height="@dimen/favorite_icon_size"
+            app:sparkbutton_activeImage="@drawable/ic_heart_on"
+            app:sparkbutton_iconSize="20dp"
+            app:sparkbutton_inActiveImage="@drawable/heart_off"
+            app:sparkbutton_primaryColor="@color/heart_primary_color"
+            app:sparkbutton_secondaryColor="@color/heart_secondary_color"/>
+
+</merge>

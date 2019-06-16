@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/article_detail_content_padding">
+
+            <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/article_detail_title_textsize"
+                    android:contentDescription="@string/article_detail_article_title_content_description"
+                    tools:text="dummy title"/>
+
+            <TextView
+                    android:id="@+id/tvBody"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/article_detail_body_margin_top"
+                    android:contentDescription="@string/article_detail_article_body_content_description"
+                    android:fontFamily="sans-serif"
+                    android:textSize="@dimen/article_detail_body_textsize"
+                    tools:text="dummy body"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/article_detail_header_height">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                app:contentScrim="?attr/colorPrimary"
+                app:expandedTitleGravity="top"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+                android:layout_height="match_parent">
+
+            <com.monzo.androidtest.ui.customview.GlideImageView
+                    android:id="@+id/ivThumbnail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/article_detail_header_content_description"/>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shadow_dark"/>
+
+            <androidx.appcompat.widget.Toolbar
+                    android:layout_width="match_parent"
+                    android:id="@+id/toolbar"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                    app:layout_scrollFlags="scroll|enterAlways"
+                    android:layout_height="?attr/actionBarSize"
+                    app:layout_collapseMode="pin">
+
+                <com.monzo.androidtest.ui.customview.FavoriteView
+                        android:layout_width="@dimen/favorite_size"
+                        android:layout_height="@dimen/favorite_size"
+                        android:id="@+id/favorite"
+                        android:layout_marginEnd="@dimen/favorite_margin_hor"
+                        android:layout_gravity="end"
+                        android:contentDescription="@string/article_detail_add_favorite_content_description"/>
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <LinearLayout
+            android:id="@+id/llState"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/list_article_width_width"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+        <TextView
+                android:id="@+id/tvStateTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/loading_in_progress"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/title_textsize"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animation"
+                android:layout_width="@dimen/list_article_animation_size"
+                android:layout_height="@dimen/list_article_animation_size"
+                android:layout_marginTop="@dimen/list_article_animation_margin_top"
+                android:scaleType="centerCrop"
+                app:lottie_rawRes="@raw/loading_animation"/>
+
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

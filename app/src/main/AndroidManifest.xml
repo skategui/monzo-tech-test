@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.monzo.androidtest">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".GuardianApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="com.monzo.androidtest.ui.list.ArticlesListActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.detail.ArticleDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeTranspHeader"
+            />
+    </application>
+
+</manifest>

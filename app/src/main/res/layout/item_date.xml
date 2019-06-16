@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          android:orientation="vertical"
+          tools:text="title"
+          android:gravity="end"
+          android:padding="@dimen/item_padding"
+          android:paddingTop="@dimen/item_padding_top"
+          android:paddingEnd="@dimen/item_padding"
+          android:paddingBottom="@dimen/item_padding"
+          android:id="@+id/tvDate"
+          android:textSize="@dimen/title_textsize"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+</TextView>
